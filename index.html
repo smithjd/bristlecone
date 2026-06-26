@@ -63,8 +63,9 @@ ul.task-list li input[type="checkbox"] {
 
 <meta property="og:title" content="Bristlecone – Bristlecone project">
 <meta property="og:description" content="">
-<meta property="og:image" content="bristlecone.jpg">
+<meta property="og:image" content="https://smithjd.github.io/bristlecone/bristlecone.jpg">
 <meta property="og:site_name" content="Bristlecone project">
+<meta property="og:image:alt" content="The oldest living species of tree, the bristlecone pine, in the White Mountains of California.">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -211,7 +212,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/smithjd\.github\.io\/bristlecone\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
